@@ -1,48 +1,47 @@
-@media screen and (max-width: 540px){
-    /**/
+@media screen and (max-width: 480px){
+
+    .container-title {
+        padding: 0 25px;
+    }
+
+    /*************** Main ***************/
     .section-main {
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
 
     .left-section-main {
-        width: 100%;/**/
-        height: 60vh;/**/
-        align-items: center;/**/
+        width: 100%;
+        height: 60vh;
+        align-items: center;
+        padding: 25px 25px;
+        text-align: center;
     }
     .right-section-main {
-        width: 100%;/**/
-        height: 40vh;/**/
-    }
-
-
-    /**/
-    .container-spotlight {
         width: 100%;
-        height: auto;
+        height: 40vh;
     }
-    
+
+    /*************** Spotlight ***************/
     .box-spotlight {
         width: 100%;
         height: auto;
         flex-wrap: wrap;
         flex-direction: row;
     }
-
-    
     .img-spotlight {
         width: 100%;
-        height: 40vh;
-        background-color: pink;
+        height: 50vh;
     }
-
     .text-spotlight {
         width: 100%;
         height: 50vh;
         padding: 0 25px;
         align-items: center;
+        text-align: center;
     }
-    /**/
+
+    /*************** Slides ***************//**/
     .container-slidess{
         width: 100%;
         height: 30vh;
@@ -55,51 +54,82 @@
     .slick-next:before {
         color: #000000;
     }
-    /**/
-    .container-title {
-        padding: 0 25px;
-    }
 
-    /**/
+    /*************** Items ***************/
     .box-item {
-        width: 90%;
-        height: 30vh;
-
+        width: 80%;
+        height: 40vh;
+        padding: 0;
+    }
+    .box-item i {
+        font-size: 35px;
+    }
+    .box-item h3 {
+        font-size: 20px;
+    }
+    .box-item p {
+        font-size: 16px;
+        line-height: 25px;
     }
     .border-responsive{
         border-bottom: thin solid #CFCFCF;
         border-right: none;
     }
-    /**/
+
+    /*************** Contact ***************/
+    .container-contact {
+        padding: 20px 0;
+    }
     .box-form-contact{
         width: 100%;
-        height: 50vh;
+        height: 60vh;
+    }
+    .form-group label{
+        font-size: 15px;
+    }
+    
+    /*************** Footer ***************/
+    .container-footer i{
+        margin: 0;
+        font-size: 18px;
+    }
+    .container-footer h6{
+        font-size: 14px;
     }
 }
 
 
-@media (min-width: 541px) and (max-width: 720px){
+/**********  Medium **********/
+@media screen and (min-width: 480px) and (max-width: 800px){
+    .paragraph {
+        font-size: 18px;
+        line-height: 28px !important;
+    }
+    .buttons {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        padding: 12px 22px;
+
+    }
+
+    /*************** Main ***************/
     .section-main {
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
-
     .left-section-main {
-        width: 100%;/**/
-        height: 60vh;/**/
-        align-items: center;/**/
-        padding: 40px;
+        width: 100%;
+        height: 50vh;
+        align-items: center;
+        padding: 0 50px 30px 50px;
+        text-align: center;
     }
     .right-section-main {
-        width: 100%;/**/
-        height: 40vh;/**/
-    }
-
-
-    .container-spotlight {
         width: 100%;
-        height: auto;
+        height: 50vh;
     }
+
+    /*************** Spotlight ***************/
     .box-spotlight {
         width: 100%;
         height: auto;
@@ -110,52 +140,77 @@
         width: 100%;
         height: 40vh;
     }
-
     .text-spotlight {
         width: 100%;
-        height: 50vh;
-        padding: 30px 25px;
+        height: 35vh;
+        padding: 0 25px;
         align-items: center;
+        text-align: center;
     }
 
-    .box-item {
-        width: 70%;
+    /*************** Slides ***************//**/
+    .container-slidess{
+        width: 100%;
         height: 30vh;
+    }
+    .autoplay{
+        width: 80%;
+        height: 100%;
+    }
+    .slick-prev:before, 
+    .slick-next:before {
+        color: #000000;
+    }
 
+
+
+
+    /*************** Items ***************/
+    .box-item {
+        width: 45%;
+        height: auto;
+        padding: 40px 0;
+    }
+    .box-item i {
+        font-size: 35px;
+    }
+    .box-item h3 {
+        font-size: 20px;
+    }
+    .box-item p {
+        font-size: 16px;
+        line-height: 25px;
     }
     .border-responsive{
         border-bottom: thin solid #CFCFCF;
         border-right: none;
     }
+
+    /*************** Contact ***************/
+    .container-contact {
+        padding: 20px 0;
+    }
     .box-form-contact{
         width: 100%;
-        height: auto;
-        padding: 30px 0;
+        height: 40vh;
     }
-    .box-spotlight {
-        height: 70vh;
+    .form-group label{
+        font-size: 17px;
     }
-}
+    .form-contact .form-control{
+        height: 45px;
+    }
+    #exampleFormControlTextarea1{
+        height: 100px !important;
+    }
+    
+    /*************** Footer ***************/
+    .container-footer i{
+        margin: 0;
+        font-size: 22px;
+    }
+    .container-footer h6{
+        font-size: 20px;
+    }
 
-
-
-@media (min-width: 721px) and (max-width: 1000px){
-    .box-item {
-        height: 50vh;
-    }
-    .box-form-contact{
-        width: 80%;
-        height: auto;
-        padding: 30px 0;
-    }
-}
-
-
-@media screen and (min-width: 1200px){
-    .left-section-main {
-        padding: 0 60px;
-    }
-    .text-spotlight {
-        padding: 0 60px;
-    }
 }

@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="img/icon2.ico">
     <title>Story HTML</title>
 
 </head>
 
 <body>
+
     <main class="section-main">
         <section class="left-section-main">
             <h1 class="title-main">Story</h1>
@@ -33,6 +35,7 @@
         <section class="right-section-main"></section>
     </main>
 
+    <!-- Spotlight -->
     <section class="container-spotlight">
         <section class="box-spotlight">
             <div class="img-spotlight">
@@ -83,7 +86,7 @@
         </section>
     </section>
 
-
+    <!-- Title -->
     <section class="container-title">
         <h3 class="title-second">Massa sed condimentum</h3>
         <p class="paragraph">This is a Gallery element. It can behave as a lightbox (when given the lightbox class), and
@@ -92,30 +95,30 @@
         </p>
     </section>
 
-
+    <!-- Slides -->
     <section class="container-slidess">
         <!-- <div class="sub-container-slide"> -->
             <div class="autoplay">
                 <div>
-                    <img src="img/gallery-min.jpg" loading="lazy" alt="">
+                    <img src="img/gallery-min.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/gallery2-min.jpg" loading="lazy" alt="">
+                    <img src="img/gallery2-min.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/gallery3-min.jpg" loading="lazy" alt="">
+                    <img src="img/gallery3-min.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/gallery4-min.jpg" loading="lazy" alt="">
+                    <img src="img/gallery4-min.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/gallery5-min.jpg" loading="lazy" alt="">
+                    <img src="img/gallery5-min.jpg" alt="">
                 </div>
             </div>
         <!-- </div> -->
     </section>
 
-
+    <!-- Title -->
     <section class="container-title">
         <h3 class="title-second">Items</h3>
         <p class="paragraph">This is an Items element, and it's basically just a grid for organizing items of various
@@ -124,7 +127,7 @@
         </p>
     </section>
 
-
+    <!-- Icon Items -->
     <section class="container-items">
         <article class="box-item border-one border-responsive">
             <i class="far fa-gem"></i>
@@ -202,6 +205,7 @@
         </article>
     </section>
 
+    <!-- Title -->
     <section class="container-title">
         <h3 class="title-second">Additional Elements</h3>
         <p class="paragraph">Finally, here are some additional elements you might find useful (and yup, they look fine
@@ -209,7 +213,7 @@
         </p>
     </section>
 
-
+    <!-- Contact -->
     <section class="container-contact">
         <section class="box-form-contact">
             <div class="form-contact">
@@ -235,7 +239,7 @@
         </section>
     </section>
 
-
+    <!-- Footer -->
     <footer class="container-footer">
         <div>
             <a href="#">
@@ -254,7 +258,7 @@
                 <i class="far fa-envelope"></i>
             </a>
         </div>
-        <h6>Design with ❤️ by Manuel Chavez</h6>
+        <h6>Design with <i class="fas fa-heart"></i> by Manuel Chavez, 2021</h6>
     </footer>
 
 
@@ -266,23 +270,23 @@
 
     <script src="slick/slick.min.js"></script>
 
-<script type="text/javascript">
-    $('.autoplay').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        responsive: [
-        {
-        breakpoint: 600,
-        settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
+    <script type="text/javascript">
+        $('.autoplay').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [
+            {
+            breakpoint: 801,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
             }
-        }
-        ]
-    });
-</script>
+            ]
+        });
+    </script>
 </body>
 
 </html>
